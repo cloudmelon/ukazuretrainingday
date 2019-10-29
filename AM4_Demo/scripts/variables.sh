@@ -12,8 +12,9 @@ PG_USER_BASE=tuser
 PG_USER="tuser@tailwindlp2s4"
 PG_PASS='asdf1234)(*&^)'
 COLLECTION=inventory
+SENDGRID_API_KEY="SG.0_0Gpeh-RSmh1bkEhT_-Rw.kb-S60GjEQSGhawCIEqcDsT_85pc583vHTvIOXAhqg8"
 #SENDGRID_API_KEY=`az keyvault secret show --vault-name ignitetour-credentials --name 'SendGridAPIKey' | jq .value | sed 's/"//g'`
-#SENDGRID_TEMPLATE_ID="d-f6aad27b127643e29f4ce3de5ca7d5f9"
+SENDGRID_TEMPLATE_ID="d-f9b72e10604b4efe98425f07a8ad4597"
 
 function prompt(){
   dryrun=${DRY_RUN:-}

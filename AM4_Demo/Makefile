@@ -3,7 +3,7 @@ docker: docker-frontend docker-inventory docker-product
 
 # Demo Tasks
 setup:
-	#@scripts/subscription.sh
+	@scripts/subscription.sh
 	@scripts/up/setup.sh
 	@scripts/mongorestore.sh > /dev/null 2>&1
 	@scripts/pgload.sh

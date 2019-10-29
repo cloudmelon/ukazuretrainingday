@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -eou pipefail
-source ./scripts/variables.sh
+
 # set subscription
 az account set --subscription "$(subscription)"
 
