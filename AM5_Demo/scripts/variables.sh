@@ -1,7 +1,7 @@
 #!/bin/bash
 #set -eou pipefail
 
-BASE=at_aks
+BASE=at_am5
 PRESENTER=`az account show | jq .user.name | sed 's/^"\([^@]*\)@.*.com"$/\1/'`
 LOCATION=westeurope
 LOCATION2=northeurope

@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 
 
-BASE=mig40
+BASE=at_am4
 EMAIL=`az account show | jq .user.name | sed 's/"//g'`
 PRESENTER=`az account show | jq .user.name | sed 's/^"\([^@]*\)@.*.com"$/\1/'`
-LOCATION=eastus
-SUB='MS Melon Azure Internal Consumption'
+LOCATION=westeurope
+SUB='9b1b3746-eb27-417d-804c-a00646520a34'
 DB_BASE=tailwind
 PG_HOST_BASE=".postgres.database.azure.com"
 PG_USER_BASE=tuser
 PG_USER="tuser@tailwindlp2s4"
 PG_PASS='asdf1234)(*&^)'
 COLLECTION=inventory
-SENDGRID_API_KEY=`az keyvault secret show --vault-name ignitetour-credentials --name 'SendGridAPIKey' | jq .value | sed 's/"//g'`
-SENDGRID_TEMPLATE_ID="d-f6aad27b127643e29f4ce3de5ca7d5f9"
+#SENDGRID_API_KEY=`az keyvault secret show --vault-name ignitetour-credentials --name 'SendGridAPIKey' | jq .value | sed 's/"//g'`
+#SENDGRID_TEMPLATE_ID="d-f6aad27b127643e29f4ce3de5ca7d5f9"
 
 function prompt(){
   dryrun=${DRY_RUN:-}
