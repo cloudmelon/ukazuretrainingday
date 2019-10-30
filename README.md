@@ -1,4 +1,4 @@
-# Microsoft Azure Training Day : Migrating Applications to the Cloud - UK Tour
+# Microsoft Azure Training Day : Modernizing Data, Applications, and APIs to the Cloud - UK Tour
 
 This repo contains demos and scripts for Azure Training Day - UK Tour.
 
