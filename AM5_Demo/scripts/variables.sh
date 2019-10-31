@@ -1,7 +1,7 @@
 #!/bin/bash
 #set -eou pipefail
 
-BASE=at_am5
+BASE=atam5
 PRESENTER=`az account show | jq .user.name | sed 's/^"\([^@]*\)@.*.com"$/\1/'`
 LOCATION=westeurope
 LOCATION2=northeurope
@@ -12,7 +12,7 @@ PG_USER_BASE=tuser
 PG_PASS='asdf1234)(*&^)'
 COLLECTION=inventory
 KUBERNETESVERSION=1.15.3
-CLUSTER_NAME=at_aks
+CLUSTER_NAME=ataks
 NODECOUNT=3
 
 function prompt(){
